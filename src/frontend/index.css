@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/assets/fonts/GeistMono-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mona Sans";
+  src: url("/assets/fonts/MonaSans-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.25rem;
+    /* Neon Arcade Dark Theme */
+    --background: 0 0 0;
+    --foreground: 0.95 0.02 180;
+    --card: 0.08 0.005 200;
+    --card-foreground: 0.95 0.02 180;
+    --popover: 0.1 0.005 200;
+    --popover-foreground: 0.95 0.02 180;
+    /* Neon cyan primary */
+    --primary: 0.85 0.18 192;
+    --primary-foreground: 0.05 0 0;
+    /* Subtle secondary */
+    --secondary: 0.12 0.01 200;
+    --secondary-foreground: 0.85 0.18 192;
+    --muted: 0.1 0.005 200;
+    --muted-foreground: 0.5 0.04 200;
+    /* Neon accent (electric cyan) */
+    --accent: 0.85 0.22 185;
+    --accent-foreground: 0.05 0 0;
+    /* Neon red destructive */
+    --destructive: 0.65 0.25 22;
+    --destructive-foreground: 0.98 0 0;
+    --border: 0.85 0.18 192 / 20%;
+    --input: 0.85 0.18 192 / 15%;
+    --ring: 0.85 0.18 192;
+    --chart-1: 0.85 0.18 192;
+    --chart-2: 0.65 0.25 22;
+    --chart-3: 0.9 0.2 95;
+    --chart-4: 0.8 0.2 290;
+    --chart-5: 0.85 0.22 140;
+    --sidebar: 0.05 0 0;
+    --sidebar-foreground: 0.95 0.02 180;
+    --sidebar-primary: 0.85 0.18 192;
+    --sidebar-primary-foreground: 0.05 0 0;
+    --sidebar-accent: 0.1 0.01 200;
+    --sidebar-accent-foreground: 0.85 0.18 192;
+    --sidebar-border: 0.85 0.18 192 / 20%;
+    --sidebar-ring: 0.85 0.18 192;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Geist Mono", monospace;
+    overflow: hidden;
+  }
+}
